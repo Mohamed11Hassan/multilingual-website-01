@@ -1,0 +1,37 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    direction: $direction;
+    text-align: $start-direction;
+    font-size: 16px;
+    font-family: $main-font;
+    line-height: 1.8rem;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-#{$start-direction}: 0;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+/*a{	
+    color: #64a19d;
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .btn-primary:focus,
+    .btn-primary.focus{
+    	color: #548b87;
+    }
+}*/

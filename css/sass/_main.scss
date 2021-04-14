@@ -1,0 +1,42 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+/*=======================
+	start main resets
+=======================*/
+@import 'base/resets';
+@import 'base/typo';
+
+/*=======================
+	start utilities
+=======================*/
+@import 'utilities/spacing';
+
+/*=======================
+	start components
+=======================*/
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/section-heading';
+@import 'components/maps';
+@import 'components/pagenation';
+@import 'components/upto-btn';
+
+
+/*=======================
+	start layout
+=======================*/
+@import 'layout/preloader';
+@import 'layout/upper-contact-info';
+@import 'layout/navbar';
+@import 'layout/masthead';
+@import 'layout/inner-masthead';
+@import 'layout/info';
+@import 'layout/services';
+@import 'layout/about-us';
+@import 'layout/contact-us';
+@import 'layout/inner-contact';
+@import 'layout/team';
+@import 'layout/testimonials';
+@import 'layout/home-blog';
+@import 'layout/inner-blog';
+@import 'layout/footer';

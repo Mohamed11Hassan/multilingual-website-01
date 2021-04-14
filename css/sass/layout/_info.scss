@@ -1,0 +1,29 @@
+.info{
+	background-color: #f9f9f9;
+	padding-top: 5.5rem;
+	padding-bottom: 4.5rem;
+	.info-box{
+		display: flex;
+		text-align: $start-direction;
+		.info-box__icon{
+			color: $accent-color;
+		}
+		.info-box__caption{
+			padding-#{$start-direction}: 20px;
+			p{
+				color: #677294;
+				margin-bottom:0;
+			}
+			span{
+				direction: $opposite-direction;
+				display: inline-block;
+				color: $primary-color;
+				font-weight: bold;
+				font-size: 1.3rem;
+				@include rtl-styles{
+					letter-spacing: -1px;
+				}
+			}
+		}
+	}
+}

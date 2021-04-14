@@ -1,0 +1,20 @@
+.about-us{
+	&__caption{
+		text-align: $start-direction;
+		p{
+			color: #64676c;
+			margin-bottom: 35px;
+		}
+	}
+	&__img{
+		text-align: $start-direction;
+    	@media(min-width: $lg-breakpoint) {
+    		text-align: $end-direction;
+    	}
+    	img{
+    		@media(max-width: $sm-breakpoint){
+    			width:100%
+    		}
+    	}
+	}
+}

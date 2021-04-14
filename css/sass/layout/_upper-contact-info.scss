@@ -1,0 +1,28 @@
+.upper-contact-info{
+	font-size: 0.9rem;
+	border-bottom: 1px solid #2d2d2d;
+	background-color: #000c20;
+	color: #7b8693;
+	.upper-contact-left{
+		li{
+			display: inline-block;
+			span:last-of-type{
+				display: inline-block;
+				direction: $opposite-direction;
+			}
+			a{
+				color: inherit;
+			}
+		}
+	}
+	.upper-contact-right{
+		text-align: $end-direction;
+		li{
+			display: inline-block;
+			margin-left: 1.2rem;
+			a{
+				color: inherit;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.masthead{
+	height: 100vh;
+	background:	linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%,
+			   	rgba(0, 0, 0, 0.7) 75%, #000000 100%),
+				url("../imgs/bg-masthead.jpg");
+	background-size: cover;
+	background-position: center center;
+
+	h1{
+		font-family: $second-font;
+		font-size: 2.8rem;
+		letter-spacing: 10px;
+		background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		@media(min-width: $lg-breakpoint){
+    		font-size: 6rem;
+    	}
+	}
+
+	p{
+		max-width: 20rem;
+    	letter-spacing: 1px;
+    	@media(min-width: $lg-breakpoint){
+    		font-size: 1.2rem;
+    		max-width: 30rem;
+    	}
+	}
+
+}

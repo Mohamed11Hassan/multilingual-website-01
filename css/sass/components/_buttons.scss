@@ -1,0 +1,22 @@
+.btn{
+    font-family: $main-font;
+    text-transform: uppercase;
+    padding: 0.9rem 2.2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+
+    &-primary{
+        background-color: $accent-color;
+        border-color: $accent-color;
+        &:hover,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active,
+        &:focus,
+        &.focus{
+            background-color: $accent-color-dark;
+            border-color: $accent-color-dark;
+        }
+    }
+}
+
+

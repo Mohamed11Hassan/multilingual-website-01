@@ -1,0 +1,94 @@
+.testimonials{
+	background: url("../imgs/gallery/section_bg04.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	&-slider{
+		&__item{
+			outline: none;
+		}
+
+		&__caption{
+	    	margin-bottom: 50px;
+	    	p{
+			    color: #a4acc3;
+			    font-weight: 500;
+			    line-height: 1.8rem;
+	    	}
+		}
+
+		&__client{
+			display: flex;
+	    	align-items: center;
+	    	&-info{
+	    		padding-#{$start-direction}: 20px;
+	    		h5{
+	    			color: #fff;
+	    			margin-bottom: 0;
+	    			text-transform: capitalize;
+				    font-size: 19px;
+				    font-weight: 400;
+				    line-height: 1em;
+	    		}
+	    		p{
+				    color: #677294;
+	    		}
+	    	}
+		}
+
+		.slick-prev, .slick-next{
+
+			display: none;
+		    position: absolute;
+		    bottom: 10%;
+		    #{$end-direction}: 65px;
+		    height: 50px;
+		    width: 50px;
+		    line-height: 50px;
+		    border: 1px solid #616373;
+		    color: #616373;
+		    background: transparent;
+		    border-radius: 0.5rem;
+		    z-index: 11;
+		    outline: none;
+		    transition: all 0.4s ease-in-out;
+		    @media (min-width: $sm-breakpoint){
+		    	display: block
+		    }
+			@media (hover: hover){
+				&:hover{
+					color: $accent-color;
+					border-color: $accent-color; 
+				}	
+			}
+		}
+
+		.slick-next {
+			#{$end-direction}: 5px;
+		}
+	}
+
+	&-form{
+		background-color: #fff;
+		padding: 50px;
+		border-radius: 0.5rem;	
+		&__heading{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		&__input{
+			margin-bottom: 20px;
+		}
+
+		&__btn{
+			width: 100%;
+		    font-size: .875rem;
+		    text-transform: uppercase;
+		    padding: 1.8rem;
+		    line-height: 0;
+		}
+	}
+}

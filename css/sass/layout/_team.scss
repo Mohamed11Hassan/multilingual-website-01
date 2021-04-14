@@ -1,0 +1,62 @@
+.team{
+	.team-box{
+		position: relative;
+		overflow: hidden;
+		&__img{
+			img{
+				width: 100%;
+			}
+		}
+
+		@media (hover: hover) {
+			&:hover{
+				.team-box__caption{
+					background-color: $accent-color;
+					bottom:0;
+					h5, h6, .team-box__social-item a{
+						color: #fff;
+					}
+
+				}
+			}
+		}
+
+		&__caption{
+			overflow: hidden;
+			text-align: center;
+			background-color: rgba(255,255,255,0.6);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			transition: all 0.4s ease-in-out;
+			@media (hover: hover) {
+				bottom: -45px;
+			}
+			h5{
+				color: $primary-color;
+				font-weight: 600;
+				margin-bottom:0.2rem;
+				transition: all 0.4s ease-in-out;
+			}
+			h6{
+				color: $primary-color;
+				margin-bottom: 20px;
+				transition: all 0.4s ease-in-out;
+			}
+
+			.team-box__social-item{
+				display: inline-block;
+				margin-right: 10px;
+				margin-left: 10px;
+				transition: all 0.4s ease-in-out;
+				a{
+					color: $primary-color; 
+					transition: all 0.4s ease-in-out;
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.toup-btn{
+
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9997;
+    button{
+    	padding: 10px 20px;
+	    background: $accent-color;
+	    color: #fff;
+	    border: 0;
+	    border-radius: 50%;
+	    box-shadow: 0 0 10px 3px rgb(108 98 98 / 20%);
+	    outline: none;
+    }
+}

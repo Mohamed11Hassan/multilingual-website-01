@@ -1,0 +1,16 @@
+
+// transition 
+@mixin transition ($value...) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+
+// rtlStyles
+
+@mixin rtl-styles {
+	@if $direction == 'rtl' {
+		@content;
+	}
+}

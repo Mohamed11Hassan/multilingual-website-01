@@ -1,0 +1,76 @@
+.masthead{
+	height: 80vh;
+	@media (min-width: $lg-breakpoint) {
+		height: 120vh;
+	}
+	background-image: url('../imgs/hero/h1_hero.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	.masthead-content{
+		h1{
+			color: #fff;
+			font-weight: 600;
+    		font-size: 2rem;
+    		line-height: 1.2em;
+    		margin-bottom: 3rem;
+    		text-align:$start-direction;
+    		@media (min-width: $md-breakpoint) {
+				font-size: 3.5rem;
+				width: 76%;
+			}
+
+			@media (min-width: $lg-breakpoint) {
+				font-size: 4rem;
+				width: 95%;
+			}
+
+			@media (min-width: $xl-breakpoint) {
+				font-size: 6.2rem;
+			}
+    		span{
+    			color: $accent-color;
+    		}
+		}
+
+	}
+
+	.masthead-form{
+
+		.masthead-form__search{
+			border-radius: 0;
+			@media (min-width: $sm-breakpoint) {
+				border-top-#{$end-direction}-radius: 0;
+    			border-bottom-#{$end-direction}-radius: 0;
+    			border-top-#{$start-direction}-radius: 0.25rem;
+    			border-bottom-#{$start-direction}-radius: 0.25rem;
+			}
+		}
+		.masthead-form__btn{
+			border-radius: 0;
+			color: #fff;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			line-height: 0;
+			font-weight: bold;
+			text-transform: uppercase;
+			@media (min-width: $sm-breakpoint) {
+				border-top-#{$end-direction}-radius: 0.25rem;
+    			border-bottom-#{$end-direction}-radius: 0.25rem;
+    			border-top-#{$start-direction}-radius: 0;
+    			border-bottom-#{$start-direction}-radius: 0;
+    			@include rtl-styles{
+    				letter-spacing: 0px;
+    			}
+			}
+			
+		}
+	}
+
+	p{
+		text-align: $start-direction;
+	}
+}

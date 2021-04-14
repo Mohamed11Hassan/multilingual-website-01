@@ -1,0 +1,53 @@
+.form-control{
+    outline: none;
+    color: #777;
+	box-shadow: none;
+    padding: 1.8rem;
+    font-family: $main-font;
+    &:focus{
+        border-color: #ced4da;
+    	box-shadow: none;
+        outline: none;
+    }
+}
+
+.form-check{
+    padding-#{$start-direction}: 1.25rem;
+    padding-#{$end-direction} : 0;
+}
+
+.form-check-input{
+    margin-#{$start-direction}: -1.25rem;
+    margin-#{$end-direction} : 0;
+}
+
+.nice-select{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    position:relative;
+    height: 0;
+    padding: 1.8rem;
+    border: 1px solid #ced4da;
+    background: #fff;
+    border-radius: .25rem;
+    line-height: 0em;
+    ul{
+        width: 100%;
+    }
+}
+
+.radio-container{
+    display: flex;
+    margin-bottom: 30px;
+    &__main-label{
+        color: $primary-color;
+        font-weight: 600;
+        margin-#{$end-direction}: 5px;
+    }
+
+    &__radio-option{
+        display:inline-block;
+        margin-#{$end-direction}: 6px;
+        font-size: 14px;
+    }
+}
